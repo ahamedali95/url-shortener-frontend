@@ -11,6 +11,9 @@ const { WebpackManifestPlugin } = require('webpack-manifest-plugin');
 const prodConfig = {
   mode: "production",
   devtool: "hidden-source-map",
+  //chunkhash - used to generate unique id to each bundle. Very useful method if you are trying to
+  //achieve long-term caching to optimize load times. These ids are only subject to change if the resource has changed, making
+  //it possible for browsers to retrieve the file from cache storage, rather than make a new request.
   output: {
     filename: "js/[name].[chunkhash].bundle.js",
   },
@@ -48,6 +51,7 @@ const prodConfig = {
   optimization: {
     runtimeChunk: "single",
     moduleIds: 'deterministic',
+    //separate vendor chunks
     splitChunks: {
       cacheGroups: {
         vendor: {
@@ -58,6 +62,8 @@ const prodConfig = {
       }
     },
     minimize: true,
+    //perform optimization - a very important step to perform in production! Create compressed, minified bundles
+    //using terser-webpack-plugin and css-minimizer-webpack-plugin to reduce load time.
     minimizer: [
       new TerserPlugin({
         parallel: true,

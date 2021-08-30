@@ -42,7 +42,10 @@ const devConfig = {
     // compress: true
   },
   plugins: [
+    //BundleAnalyzerPlugin - used to analyze final webpack bundle; one of the most efficient ways to perform
+    //tree-shaking: https://ahamedblogs.wordpress.com/2020/02/11/reducing-js-bundle-sizes-using-tree-shaking/
     // new BundleAnalyzerPlugin(),
+    //HotModuleReplacementPlugin - avoid losing state after every change made to files.
     new Webpack.HotModuleReplacementPlugin()
   ]
 };
