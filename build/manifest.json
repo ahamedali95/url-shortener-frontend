@@ -1,0 +1,15 @@
+{
+  "main.js": "autojs/main.24c6b255e4d74f3b795d.bundle.js",
+  "main.css": "autocss/style.d3419f42702dfcf68922.bundle.css",
+  "runtime.js": "autojs/runtime.b55099393252c1276f1c.bundle.js",
+  "Calendar.js": "autojs/Calendar.06259cbe498c61fc9463.bundle.js",
+  "Settings.js": "autojs/Settings.d143054e04f6bfd20824.bundle.js",
+  "vendors.js": "autojs/vendors.caffe9a63c956f057732.bundle.js",
+  "background-pic.png": "auto7be742be77aaa4a7bcec.png",
+  "index.html": "autoindex.html",
+  "main.bundle.js.map": "autojs/main.24c6b255e4d74f3b795d.bundle.js.map",
+  "runtime.bundle.js.map": "autojs/runtime.b55099393252c1276f1c.bundle.js.map",
+  "Calendar.bundle.js.map": "autojs/Calendar.06259cbe498c61fc9463.bundle.js.map",
+  "Settings.bundle.js.map": "autojs/Settings.d143054e04f6bfd20824.bundle.js.map",
+  "vendors.bundle.js.map": "autojs/vendors.caffe9a63c956f057732.bundle.js.map"
+}
