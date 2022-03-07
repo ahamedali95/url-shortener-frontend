@@ -36,9 +36,9 @@ jobs:
 
 
       - name: Webpack Build
-         run: |
-           echo "Running production build"
-           npm run build:prod
+        run: |
+          echo "Running production build"
+          npm run build:prod
 
   security:
     name: Security Scan
