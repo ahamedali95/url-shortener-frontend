@@ -44,8 +44,6 @@ jobs:
     name: Security Scan
     needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: dev
     permissions:
       actions: read
       contents: read
@@ -74,20 +72,6 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: dev
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Release
-        uses: akhileshns/heroku-deploy@v3.12.12
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "sholy"
-          heroku_email: ${{secrets.HEROKU_EMAIL}}
-          branch: "master"
-          healthcheck: "https://sholy.herokuapp.com/api/v1/health"
-        env:
-          HD_DB_CONNECT_URL: ${{secrets.DB_CONNECT_URL}}
 
     steps:
       - uses: actions/checkout@v2
