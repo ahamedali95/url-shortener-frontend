@@ -6,7 +6,6 @@
   "scripts": {
     "check:typings": "tsc --emitDeclarationOnly --declarationDir ts-output",
     "generate:doc": "typedoc src",
-    "profile:webpack": "webpack --profile --json=compilation-stats.json --config config/webpack.prod.js",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
     "test:watch": "jest --watchAll",
