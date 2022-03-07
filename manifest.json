@@ -4,6 +4,7 @@
   "runtime.js": "autojs/runtime.5160ba69b4c2f3cb1ff6.bundle.js",
   "App.js": "autojs/App.21ecc95feab85999f1d0.bundle.js",
   "vendors.js": "autojs/vendors.e157f5b72b281045af32.bundle.js",
+  "favicon.ico": "autofavicon.ico",
   "index.html": "autoindex.html",
   "main.bundle.js.map": "autojs/main.e6581678c0277a55793f.bundle.js.map",
   "runtime.bundle.js.map": "autojs/runtime.5160ba69b4c2f3cb1ff6.bundle.js.map",
