@@ -26,7 +26,8 @@
     "test": "jest --collectCoverage",
     "start": "webpack-dev-server --config config/webpack.dev.js",
     "build:dev": "webpack --config config/webpack.dev.js",
-    "build:prod": "webpack --config config/webpack.prod.js"
+    "build:prod": "webpack --config config/webpack.prod.js",
+    "heroku-postbuild": "node server.js"
   },
   "pre-push": [
     "lint",
