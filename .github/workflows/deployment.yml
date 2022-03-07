@@ -2,7 +2,7 @@ name: CI-CD Integration/w Github Workflow
 
 on:
   push:
-    branches: [ master ]
+    branches: [ develop ]
 
   workflow_dispatch:
 
