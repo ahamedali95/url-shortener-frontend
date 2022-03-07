@@ -37,7 +37,7 @@ const commonConfig = {
       },
       //file-loader replaced by webpack's built-in loader
       {
-        test: /\.(png|jpg|jpeg|svg|gif|woff|woff2|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        test: /\.(ico|png|jpg|jpeg|svg|gif|woff|woff2|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
         type: "asset/resource"
       }
     ]
@@ -45,7 +45,8 @@ const commonConfig = {
   plugins: [
     //plugin to link bundles to index.html as scripts
     new HtmlWebpackPlugin({
-      template: publicDirectory+"/index.html"
+      template: publicDirectory+"/index.html",
+      favicon: publicDirectory+"/favicon.ico"
     }),
     //Build progress
     new Webpack.ProgressPlugin()
