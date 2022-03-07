@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import {Typography, Box, Grid, TextField, Button, Paper, CircularProgress} from '@material-ui/core';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import {Alert} from '@material-ui/lab';
@@ -119,4 +119,4 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ loading, data, errorMes
     );
 };
 
-export default DetailsSection;
+export default memo(DetailsSection);

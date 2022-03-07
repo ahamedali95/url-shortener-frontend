@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useMemo } from 'react';
+import React, { ChangeEvent, useMemo, memo } from 'react';
 import { Typography, Box, TextField, Grid, Button, Paper, FormHelperText } from '@material-ui/core';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
@@ -101,4 +101,4 @@ const UrlEntry: React.FC<UrlEntryProps> = ({ detailsLoading, value, handleChange
     );
 };
 
-export default UrlEntry;
+export default memo(UrlEntry);
