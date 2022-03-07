@@ -22,7 +22,7 @@ const useResource = <T>(
         try {
             setLoading(true);
             const response = await apiMethod(payload) as GenericResponse<T>;
-            console.log(response)
+            console.log(response);
             setLoading(false);
             setData(response.data.data);
         } catch (e) {

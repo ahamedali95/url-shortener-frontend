@@ -1,6 +1,6 @@
 import React from 'react';
 import { screen, render, RenderResult, fireEvent } from '@testing-library/react';
-import UrlEntry, {UrlEntryProps} from "../../components/UrlEntry";
+import UrlEntry, {UrlEntryProps} from '../../components/UrlEntry';
 
 describe('UrlEntry Component', () => {
     let componet: RenderResult;
@@ -26,7 +26,7 @@ describe('UrlEntry Component', () => {
     });
 
     it('should render an entry field to enter url', () => {
-        expect(screen.getByLabelText("urlEntry").querySelector('input') as HTMLInputElement).toBeInTheDocument();
+        expect(screen.getByLabelText('urlEntry').querySelector('input') as HTMLInputElement).toBeInTheDocument();
     });
 
     it('should render a button to submit url entered and should be in disabled state', () => {
@@ -57,7 +57,7 @@ describe('UrlEntry Component', () => {
     });
 
     it('should call ~mockHandleChange~ when url entry is done', () => {
-        fireEvent.change(screen.getByLabelText("urlEntry").querySelector('input') as HTMLInputElement, { target: { value: 'hello' } });
+        fireEvent.change(screen.getByLabelText('urlEntry').querySelector('input') as HTMLInputElement, { target: { value: 'hello' } });
 
         expect(mockHandleChange).toHaveBeenCalledWith('hello');
     });

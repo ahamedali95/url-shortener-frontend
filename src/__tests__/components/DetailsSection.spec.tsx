@@ -1,10 +1,10 @@
 import React from 'react';
 import { screen, render, RenderResult, fireEvent } from '@testing-library/react';
-import DetailsSection, {DetailsSectionProps} from "../../components/DetailsSection";
+import DetailsSection, {DetailsSectionProps} from '../../components/DetailsSection';
 
 describe('DetailsSection Component', () => {
     let componet: RenderResult;
-    const properties: DetailsSectionProps= {
+    const properties: DetailsSectionProps = {
         data: null,
         loading: true,
         errorMessage: 'Something wrong!'
@@ -53,6 +53,6 @@ describe('DetailsSection Component', () => {
             loading: false
         }));
 
-        expect(screen.getByText('Something wrong!') as HTMLDivElement).toBeInTheDocument;
+        expect(screen.getByText('Something wrong!') as HTMLDivElement).toBeInTheDocument();
     });
 });
