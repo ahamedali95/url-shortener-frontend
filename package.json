@@ -1,8 +1,22 @@
 {
-  "name": "webpack-config",
+  "name": "url-shortener-frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "npm": ">=6.14.15",
+    "node": ">=14.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahamedali95/url-shortener-frontend"
+  },
+  "author": "Ahamed Abbas",
+  "license": "./LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/ahamedali95/url-shortener-frontend/issues"
+  },
+  "homepage": "https://github.com/ahamedali95/url-shortener-frontend",
   "scripts": {
     "check:typings": "tsc --emitDeclarationOnly --declarationDir ts-output",
     "generate:doc": "typedoc src",
@@ -18,23 +32,14 @@
     "lint",
     "check:typings"
   ],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@date-io/date-fns": "^1.1.0",
     "@material-ui/core": "^4.12.1",
-    "@material-ui/icons": "^3.0.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
-    "@material-ui/pickers": "^3.3.10",
-    "@reduxjs/toolkit": "^1.6.1",
     "axios": "^0.26.0",
-    "date-fns": "^2.0.0-alpha.27",
-    "lodash-es": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.1",
-    "redux-toolkit": "^1.1.2",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
