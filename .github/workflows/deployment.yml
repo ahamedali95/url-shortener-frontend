@@ -2,7 +2,7 @@ name: CI-CD Integration/w Github Workflow
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ master ]
 
   workflow_dispatch:
 
@@ -88,3 +88,14 @@ jobs:
           healthcheck: "https://sholy.herokuapp.com/api/v1/health"
         env:
           HD_DB_CONNECT_URL: ${{secrets.DB_CONNECT_URL}}
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Release
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SHOLY_FRONTEND }}'
+          channelId: live
+          projectId: sholy-frontend

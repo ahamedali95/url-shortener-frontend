@@ -16,8 +16,7 @@
   "bugs": {
     "url": "https://github.com/ahamedali95/url-shortener-frontend/issues"
   },
-  "homepage": "https://ahamedali95.github.io/url-shortener-frontend/",
-  "private": true,
+  "homepage": "https://github.com/ahamedali95/url-shortener-frontend",
   "scripts": {
     "check:typings": "tsc --emitDeclarationOnly --declarationDir ts-output",
     "generate:doc": "typedoc src",
@@ -27,10 +26,7 @@
     "test": "jest --collectCoverage",
     "start": "webpack-dev-server --config config/webpack.dev.js",
     "build:dev": "webpack --config config/webpack.dev.js",
-    "build:prod": "webpack --config config/webpack.prod.js",
-    "predeploy": "npm run build:prod",
-    "deploy": "gh-pages -d build",
-    "postinstall": "npm run build:prod"
+    "build:prod": "webpack --config config/webpack.prod.js"
   },
   "pre-push": [
     "lint",
