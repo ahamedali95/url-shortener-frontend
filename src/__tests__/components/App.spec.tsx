@@ -10,6 +10,6 @@ describe('App Component', () => {
     });
 
     it('should render application logo', () => {
-        expect(screen.getByText('URL Shortener') as HTMLHeadingElement).toBeInTheDocument();
+        expect(screen.getByText('Shotly') as HTMLHeadingElement).toBeInTheDocument();
     });
 });

@@ -52,7 +52,7 @@ const App: React.FC = () => {
                 className={classes.logo}
                 variant='h1'
             >
-                URL Shortener
+                Shotly
             </Typography>
             <UrlEntry
                 detailsLoading={loading}
