@@ -1,6 +1,6 @@
 URL Shortener Frontend Application
 
-I present you "Shotly" - an url shortener we need! First of all, I want to thank Stord and their team - David and Rebekah for providing the
+I present you "Shotly" - an url shortener we need! First of all, I want to thank you guys for providing the
 opportunity to build this application. Even though the scope of the application is small, I thoroughly enjoyed building this application.
 It allowed me to explore new ideas, solutions, tools and technologies that I may not have used at work. It was a bliss to have
 that full-fledged freedom and get to explore new things.
