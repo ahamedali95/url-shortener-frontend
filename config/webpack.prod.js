@@ -15,7 +15,7 @@ const prodConfig = {
   //achieve long-term caching to optimize load times. These ids are only subject to change if the resource has changed, making
   //it possible for browsers to retrieve the file from cache storage, rather than make a new request.
   output: {
-    filename: "js/[name].[chunkhash].bundle.js",
+    filename: "js/[name].[chunkhash].bundle.js"
   },
   module: {
     rules: [
@@ -81,7 +81,7 @@ const prodConfig = {
     ]
   },
   performance: {
-    hints: 'warning',
+    hints: 'warning'
   }
 };
 

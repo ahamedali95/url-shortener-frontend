@@ -1,5 +1,5 @@
 TN:
-SF:src/Router.tsx
+SF:src/Appx
 FN:5,(anonymous_0)
 FN:6,(anonymous_1)
 FN:18,(anonymous_2)
@@ -31,7 +31,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/index.tsx
+SF:src/AppContainerContainer.tsx
 FNF:0
 FNH:0
 DA:19,0
@@ -175,7 +175,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/pages/App/index.tsx
+SF:src/pages/AppContainer/AppContainerContainer.tsx
 FN:4,(anonymous_0)
 FNF:1
 FNH:0
@@ -187,7 +187,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:src/pages/Calendar/index.tsx
+SF:src/pages/Calendar/AppContainerContainer.tsx
 FN:22,(anonymous_0)
 FN:65,(anonymous_1)
 FN:143,(anonymous_2)
@@ -218,7 +218,7 @@ BRF:4
 BRH:0
 end_of_record
 TN:
-SF:src/pages/Settings/index.tsx
+SF:src/pages/Settings/AppContainer.tsxainer.tsx
 FN:5,(anonymous_0)
 FNF:1
 FNH:0

@@ -20,12 +20,18 @@ module.exports = {
     ecmaVersion: 11,
     ecmaFeatures: {
       jsx: true
-    },
+    }
   },
   settings: {
     react: {
       pragma: "React",
       version: "detect"
     }
+  },
+  rules: {
+    'react/prop-types': 'off',
+    indent: [ 'error', 4 ],
+    quotes: ['error', 'single'],
+    '@typescript-eslint/no-explicit-any': 'off'
   }
 };

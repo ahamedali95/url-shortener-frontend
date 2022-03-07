@@ -9,7 +9,7 @@ const commonConfig = {
   entry: srcDirectory+"/index.tsx",
   resolve: {
     modules: [srcDirectory, 'node_modules'],
-    extensions: [ ".ts", ".tsx", ".js", ".jsx", ".png" ]
+    extensions: [ ".tsx", ".ts", ".js", ".jsx", ".png" ]
   },
   output: {
     filename: "[name].bundle.js",

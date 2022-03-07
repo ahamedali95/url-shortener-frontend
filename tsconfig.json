@@ -9,14 +9,19 @@
     "allowJs": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": false,
     "isolatedModules": true,
     "jsx": "react",
     "declaration": true,
     "outDir": "./dist",
     "moduleResolution": "node",
-    "module": "esnext"
+    "module": "esnext",
+    "typeRoots": [
+      "src/custom.d.ts",
+      "src/types.ts",
+      "node_modules/@types"
+    ]
   },
   "include": [
     "src"

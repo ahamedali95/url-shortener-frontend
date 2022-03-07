@@ -7,19 +7,24 @@
 import {createTheme, ThemeOptions} from '@material-ui/core/styles';
 
 const theme: ThemeOptions = {
-  palette: {
-    primary: {
-      main: '#6d1cac'
+    palette: {
+        primary: {
+            main: '#6d1cac'
+        },
+        secondary: {
+            main: '#7431ca'
+        }
     },
-    secondary: {
-      main: '#7431ca'
-    }
-  },
-  props: {
-    MuiButtonBase: {
-      disableRipple: true
-    }
-  },
+    typography: {
+        button: {
+            textTransform: 'none'
+        }
+    },
+    props: {
+        MuiButtonBase: {
+            disableRipple: true
+        }
+    },
 };
 
 export default createTheme(theme);

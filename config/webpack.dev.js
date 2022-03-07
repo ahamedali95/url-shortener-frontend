@@ -33,10 +33,8 @@ const devConfig = {
     hot: true,
     port: 3000,
     proxy: {
-      "**/api/**": {
-        target: "http://localhost:8080",
-        secure: false
-      }
+      '/api': 'http://[::1]:8080',
+      '/api/**': 'http://localhost:8080/'
     },
     historyApiFallback: true,
     // compress: true

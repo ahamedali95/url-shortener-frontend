@@ -6,7 +6,7 @@ module.exports = {
         targets: {
           chrome: "95",
           safari: "15",
-          "edge": "92",
+          edge: "92",
           firefox: "93",
           node: "current"
         },
