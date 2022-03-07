@@ -41,9 +41,6 @@ const App: React.FC = () => {
         setShortenUrlClick(true);
     }, []);
 
-
-    console.log(error);
-
     return (
         <Grid
             className={classes.root}

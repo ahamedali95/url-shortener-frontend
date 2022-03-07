@@ -1,4 +1,4 @@
-name: CI-CD Integration/w Github Workflow
+name: CI-CD Integration w/ Github Workflow & Firebase cloud platform
 
 on:
   push:
@@ -34,6 +34,8 @@ jobs:
           echo "Running production build"
           npm run build:prod
 
+      - name: Unit Tests
+        run: npm run test
 
       - name: Webpack Build
         run: |

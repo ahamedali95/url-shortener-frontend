@@ -2,7 +2,7 @@ import React, { ChangeEvent, useMemo, memo } from 'react';
 import { Typography, Box, TextField, Grid, Button, Paper, FormHelperText } from '@material-ui/core';
 import { makeStyles, createStyles } from '@material-ui/core/styles';
 
-type UrlEntryProps = {
+export type UrlEntryProps = {
     detailsLoading: boolean;
     handleChange: (value: string) => unknown;
     handleClick: () => unknown;
@@ -72,7 +72,10 @@ const UrlEntry: React.FC<UrlEntryProps> = ({ detailsLoading, value, handleChange
                         focused
                         onChange={(e: ChangeEvent<HTMLInputElement>) => handleChange(e.target.value)}
                         value={value}
-                        InputProps={{ disableUnderline: true }}
+                        InputProps={{
+                            disableUnderline: true,
+                            'aria-label': 'urlEntry'
+                        }}
                     />
                 </Grid>
                 <Grid

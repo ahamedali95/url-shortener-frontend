@@ -22,6 +22,7 @@ const useResource = <T>(
         try {
             setLoading(true);
             const response = await apiMethod(payload) as GenericResponse<T>;
+            console.log(response)
             setLoading(false);
             setData(response.data.data);
         } catch (e) {
@@ -32,7 +33,7 @@ const useResource = <T>(
 
     useEffect(() => {
         onLoadFetchEnabled && fetch();
-    }, [onLoadFetchEnabled]);
+    }, [onLoadFetchEnabled, fetch]);
 
     return {
         loading,

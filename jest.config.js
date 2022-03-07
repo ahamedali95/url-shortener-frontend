@@ -1,7 +1,13 @@
 module.exports = {
   testEnvironment: "jsdom",
   collectCoverageFrom: [
-    "<rootDir>/src/**/*.{ts,tsx}"
+    "<rootDir>/src/**/*.{ts,tsx}",
+    "!<rootDir>/src/layout",
+    "!<rootDir>/src/service-worker.ts",
+    "!<rootDir>/src/custom.d.ts",
+    "!<rootDir>/src/index.tsx",
+    "!<rootDir>/src/types.ts",
+    "!<rootDir>/src/wdyr.ts"
   ],
   coverageDirectory: "coverage",
   testMatch: [

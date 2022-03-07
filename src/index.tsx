@@ -11,6 +11,8 @@ import theme from './layout/theme';
 
 import './styles/index.scss';
 
+console.log(process.env.NODE_ENV);
+
 ReactDOM.render(
     <ThemeProvider theme={theme}>
         <AppContainer1 />

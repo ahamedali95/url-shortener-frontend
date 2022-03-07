@@ -4,8 +4,8 @@ import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import {Alert} from '@material-ui/lab';
 import {IUrl} from '../types';
 
-type DetailsSectionProps = {
-    data: IUrl;
+export type DetailsSectionProps = {
+    data: IUrl | null;
     errorMessage: string;
     loading: boolean;
 };
@@ -38,6 +38,9 @@ const useDetailsSectionStyles = makeStyles((theme: Theme) => createStyles({
     },
     errorMessage: {
         width: '60%'
+    },
+    grid: {
+        width: '60%',
     }
 }));
 
@@ -76,6 +79,7 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ loading, data, errorMes
                                 direction="row"
                                 item
                                 justifyContent="center"
+                                className={classes.grid}
                             >
                                 <Grid
                                     item
@@ -84,7 +88,10 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ loading, data, errorMes
                                     <TextField
                                         className={classes.shortenedUrl}
                                         disabled
-                                        InputProps={{ disableUnderline: true }}
+                                        InputProps={{
+                                            disableUnderline: true,
+                                            'aria-label': 'shortUrlDisplay'
+                                        }}
                                         value={data.shortUrl}
                                     />
                                 </Grid>
@@ -95,14 +102,14 @@ const DetailsSection: React.FC<DetailsSectionProps> = ({ loading, data, errorMes
                                     <Button
                                         className={classes.copyUrl}
                                         color="primary"
+                                        onClick={() => navigator.clipboard.writeText(data.shortUrl)}
                                         variant="contained"
                                     >
-                              Copy URL
+                                        Copy URL
                                     </Button>
                                 </Grid>
                             </Grid>
                             <Box mt={2} />
-
                         </Paper>
                     </>
             }
